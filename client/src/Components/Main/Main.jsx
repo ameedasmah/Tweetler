@@ -30,7 +30,7 @@ const Main = ({ id, match, search }) => {
 
   useEffect(() => {
     const results = editTweets.filter((tweet, i) => {
-      return tweet.tweet.includes(search)
+      return tweet.tweet.toLowerCase().includes(search)
     })
     setTweets(results)
   }, [search])
