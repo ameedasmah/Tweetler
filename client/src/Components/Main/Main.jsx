@@ -9,8 +9,10 @@ import TweetBody from '../CardPeopleTweet/newTweetBox'
 import Search from "../Search/Search"
 
 import './Main.css';
-const Main = ({ id, match }) => {
+const Main = ({ id, match, search }) => {
+
   const [tweets, setTweets] = useState([])
+  const [editTweets, setEditTweets] = useState([])
   useEffect(() => {
     const requestOptions = {
       method: 'GET',
@@ -20,14 +22,22 @@ const Main = ({ id, match }) => {
       .then(response => response.json())
       .then((data) => {
         // console.log('tweet', data)
+        setEditTweets(data)
         setTweets(data)
       });
   }
     , [])
 
-  // console.log(',,,,,,', console.log(match.path))
+  useEffect(() => {
+    const results = editTweets.filter((tweet, i) => {
+      return tweet.tweet.includes(search)
+    })
+    setTweets(results)
+  }, [search])
+
+  console.log(',,,,,,', search)
   return (
-    <div className="main-comp">
+    <div div className="main-comp" >
       <div>
         <TopNav />
         {
@@ -40,11 +50,11 @@ const Main = ({ id, match }) => {
 
       </div>
       <div className="main-trends-comp">
-        <Search />
+        {/* <Search /> */}
         <Trends />
         <WhoToFollow />
       </div>
-    </div>
+    </div >
   );
 }
 

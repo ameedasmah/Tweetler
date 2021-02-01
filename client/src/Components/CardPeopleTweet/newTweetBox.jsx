@@ -93,7 +93,7 @@ const TweetBody = ({ tweet, id }) => {
             <div className='comments-sec'>
                 <CommentIcon style={{ width: '35px', height: "35px" }} />
                 <FavoriteIcon onClick={handleLike} style={{ width: '35px', height: "35px", color: `${likeColor ? 'red' : ''}` }} />
-                <div onClick={addBookMark} style={{ width: '35px', height: "35px" }}><BookmarkBorderIcon style={save.length ? { color: 'Blue', marginRight: '7px' } : { marginRight: '7px' }} /><p>bookmarks</p></div>
+                <div onClick={addBookMark} style={{ width: '35px', height: "35px" }}><BookmarkBorderIcon style={save.length ? { color: 'Blue', marginRight: '7px' } : { marginRight: '3px' }} /><p></p></div>
 
             </div>
             <div className="profile-comment" >

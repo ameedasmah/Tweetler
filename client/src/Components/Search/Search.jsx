@@ -1,6 +1,6 @@
 import './Search.css';
 
-const Search = () => {
+const Search = ({ onInputChange }) => {
     return (
         <div className="search-comp">
             <div className="search-comp-icon">
@@ -8,12 +8,17 @@ const Search = () => {
             </div>
 
             <div className="search-comp-input">
-                <input placeholder="Seacrh Tweeter" />
+                <input placeholder="Seacrh Tweeter" onChange={(e) => {
+                    console.log('sddssd')
+                    onInputChange(e.target.value)
+                }
+                } />
+
             </div>
-            
+
         </div>
 
-      );
+    );
 }
- 
+
 export default Search;

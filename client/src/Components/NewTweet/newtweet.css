@@ -1,9 +1,9 @@
 .box-newtweet {
   position: relative;
-  width: 520px;
+  width: 700px;
   margin-bottom: 40px;
   margin-top: 40px;
-  margin-left: 3.6rem;
+  margin-left: 2rem;
   height: 195.29px;
   /* left: 360px; */
   /* top: 94.29px; */
@@ -29,7 +29,7 @@
 
 .horz-line {
   position: absolute;
-  width: 480px;
+  width: 680px;
   height: 0px;
   left: 12px;
   top: 50.2px;
@@ -65,7 +65,8 @@
   position: absolute;
   width: 30px !important;
   height: 30px !important;
-  left: 380px;
+  left: 560px;
+  margin-top: -6px;
   top: 156.58px;
 }
 
@@ -96,7 +97,7 @@
   letter-spacing: 0.15em !important;
   width: 81px;
   height: 32px;
-  left: 420px;
+  left: 610px;
   top: 152.58px;
   background: #2f80ed !important;
   border-radius: 4px !important;
