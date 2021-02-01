@@ -4,7 +4,9 @@
   justify-content: flex-end;
   height: 100vh;
   width: 402px;
+  top: 100px;
   border-right: 1px solid #ebeef0;
+  margin-left: 1.8rem;
 }
 
 .tweeter-sidenavbar-container .sidenav-logo {
@@ -14,12 +16,14 @@
 #sidelogo:hover {
   color: #136699 !important;
 }
+
 .tweeter-sidenavbar-container .sidenav-logo .tweeter-logo {
   fill: #1da1f2;
   width: 35px;
   height: 30px;
 }
-.tweeter-sidenavbar-container .sidenav-container nav > a {
+
+.tweeter-sidenavbar-container .sidenav-container nav>a {
   display: block;
   margin: 10px 2px;
   width: 238px;
@@ -27,18 +31,21 @@
   font-size: 19px;
   font-weight: 700;
 }
-.tweeter-sidenavbar-container .sidenav-container nav > a:hover > .sidenav-item {
+
+.tweeter-sidenavbar-container .sidenav-container nav>a:hover>.sidenav-item {
   color: #1da1f2;
   border-radius: 20px;
   border: 1px hidden #fff;
   background-color: #e7f4ff;
   cursor: pointer;
 }
+
 .tweeter-sidenavbar-container .sidenav-container nav .sidenav-item {
   padding: 5px;
   width: auto;
   cursor: pointer;
 }
+
 .tweeter-sidenavbar-container .sidenav-container nav .tweet-item {
   width: 200px;
   background-color: #1da1f2;
@@ -49,6 +56,7 @@
   padding: 15px 10px;
   font-weight: 600;
 }
+
 .tweeter-sidenavbar-container .sidenav-container nav .tweet-item:hover {
   cursor: pointer;
 }
@@ -56,11 +64,13 @@
 .sidenav-item {
   display: flex;
 }
+
 .sidenav-item div:first-child {
   fill: #1da1f2;
   width: 27px;
   height: 27px;
 }
+
 .sidenav-item div:nth-child(2) {
   margin-left: 20px;
   margin-right: 15px;
@@ -70,26 +80,32 @@
   position: absolute;
   margin: 10px 0;
 }
+
 .username-data .username-data-container {
   display: flex;
   justify-content: center;
 }
+
 .username-data .profile-img img {
   border-radius: 50%;
   width: 39px;
   height: 39px;
 }
+
 .username-data .username {
   margin: 0 10px;
 }
+
 .username-data .username div:first-child {
   font-weight: 700;
 }
+
 .username-data .dots-container {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
+
 .username-data .dots-container .dots {
   display: block;
   height: 1.25em;
