@@ -27,6 +27,7 @@ const TweetBody = ({ tweet, id }) => {
     const [like, setLike] = useState("")
     const [retweet, setRetweet] = useState("")
     const [save, setSave] = useState(tweet.tweet_Bookmark)
+    const [likeColor, setLikeColor] = useState(false)
     // console.log('save', save)
 
     const submitComment = (e) => {
@@ -48,9 +49,8 @@ const TweetBody = ({ tweet, id }) => {
     }
 
     const handleLike = async () => {
-
+        setLikeColor(!likeColor)
     }
-
     const addBookMark = (e) => {
         e.preventDefault()
         const requestOptions = {
@@ -87,12 +87,12 @@ const TweetBody = ({ tweet, id }) => {
             }
             <div className="comments-saves ">
                 <h5 style={{ marginRight: "10px" }}>{tweet?.comments?.length} omments</h5>
-                <h5 style={{ marginRight: "10px" }}>{tweet?.tweet_likes?.length} likes</h5>
+                <h5 style={{ marginRight: "10px" }}>{likeColor ? tweet?.tweet_likes?.length + 1 : tweet?.tweet_likes?.length} likes</h5>
                 <h5> {tweet?.tweet_Bookmark?.length} saves</h5>
             </div>
             <div className='comments-sec'>
                 <CommentIcon style={{ width: '35px', height: "35px" }} />
-                <FavoriteIcon style={{ width: '35px', height: "35px" }} />
+                <FavoriteIcon onClick={handleLike} style={{ width: '35px', height: "35px", color: `${likeColor ? 'red' : ''}` }} />
                 <div onClick={addBookMark} style={{ width: '35px', height: "35px" }}><BookmarkBorderIcon style={save.length ? { color: 'Blue', marginRight: '7px' } : { marginRight: '7px' }} /><p>bookmarks</p></div>
 
             </div>
