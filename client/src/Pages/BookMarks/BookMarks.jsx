@@ -11,10 +11,11 @@ import TweetBody from "../../Components/CardPeopleTweet/newTweetBox";
 
 
 
-const HomePage = ({ id }) => {
+const HomePage = () => {
   const [tweets, setTweets] = useState(null)
   const [bookmarks, setBookmarks] = useState(null)
-
+  const [id, setId] = useState(localStorage.getItem('id'))
+  console.log('Bid', id)
   useEffect(() => {
     getTweets()
   }, [])
@@ -28,9 +29,9 @@ const HomePage = ({ id }) => {
     fetch('http://127.0.0.1:8000/user/details', requestOptions)
       .then(response => response.json())
       .then(data => {
-        // console.log(data)
+        console.log('bookmarks', data)
         setTweets(data.tweets)
-        getBookmarks({ user_bookmarks: data.user_bookmarks })
+        getBookmarks({ user_Bookmark: data.user_Bookmark })
       })
   }
 
@@ -40,7 +41,7 @@ const HomePage = ({ id }) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(obj)
     }
-    fetch('http://127.0.0.1:8000/tweet/bookmarks', requestOptions)
+    fetch('http://127.0.0.1:8000/tweet/bookmakrs/', requestOptions)
       .then(response => response.json())
       .then(data => {
         // window.location.reload()

@@ -4,7 +4,7 @@ from tweets.views import TweetList, details, bookmakrs
 urlpatterns = [
     path('', TweetList.as_view()),
     path('details/', details),
-    path('bookmakrs/', details)
+    path('bookmakrs/', bookmakrs)
 
 
 ]

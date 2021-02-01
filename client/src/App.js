@@ -68,7 +68,7 @@ function App() {
           {/* <Route path='/home' render={(props) => !token ? <Redirect to='/home' /> : (<HomePage />)} /> */}
           <Route path="/home" exact render={(props) => !token ? <Redirect to='/' /> : <HomePage id={id} {...props} />} />
 
-          <Route path="/explore" exact render={(props) => !token ? <Redirect to='/' /> : <HomePage id={id} {...props} />} />
+          <Route path="/explore" exact render={(props) => !token ? <Redirect to='/' /> : <ExplorePage id={id} {...props} />} />
           <Route path="/bookmarks" exact render={() => <BookMarks id={id} />} />
           <Route path="/profile" exact render={() => <Profile id={id} />} />
         </Switch>

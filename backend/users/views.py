@@ -18,7 +18,6 @@ class UserList(generics.ListCreateAPIView):
 def details(request):
     print(request.data)
     myaccount = UserAccount.objects.get(pk=request.data['pk'])
-    # console.log('dssss', myaccount)
     serializer = UserSerializered(myaccount, many=False)
     return Response(serializer.data)
 
