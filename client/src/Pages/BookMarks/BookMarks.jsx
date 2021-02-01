@@ -55,7 +55,7 @@ const HomePage = () => {
       <NavBar />
       <SideBar />
       <div className="book-div">Tweets Saved</div>
-      <div className="Card-div">
+      <div className="Card-div" style={{ marginTop: '10.2rem' }}>
         {
           bookmarks && bookmarks.map((tweet, id) => <TweetBody key={id} tweet={tweet} />)
         }

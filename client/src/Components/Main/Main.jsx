@@ -39,7 +39,7 @@ const Main = ({ id, match, search }) => {
   return (
     <div div className="main-comp" >
       <div>
-        <TopNav />
+        {/* <TopNav /> */}
         {
           match.path === '/home' && <NewTweet tweet={tweets} setTweets={setTweets} id={id} />
         }

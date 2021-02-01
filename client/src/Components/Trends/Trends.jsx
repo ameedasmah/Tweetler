@@ -85,7 +85,7 @@ import SearchIcon from "@material-ui/icons/Search";
 function Widgets() {
     return (
         <div className="widgets">
-            <div className="widgets__widgetContainer">
+            <div className="widgets__widgetContainer" style={{ marginTop: '2.3rem' }}>
                 <h2>What's happening</h2>
 
                 <TwitterTweetEmbed tweetId={"858551177860055040"} />
