@@ -1,0 +1,68 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+.profile__details{
+    width: 74%;
+    height: 163px;
+    background-color: white;
+    position: absolute;
+    top: 360px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.profile__img{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_1141196125_411306.jpg);
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    left: 2.5%;
+    bottom: 41%;
+}
+
+.details__info{
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 170px;
+    width: 40vw;
+    align-items: center;
+}
+
+.details__info p{
+    margin-right: 40px;
+}
+
+.profile__name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.follow{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+}
+
+.upload{
+    position: absolute;
+    bottom: -8px;
+    left: -50px;
+}

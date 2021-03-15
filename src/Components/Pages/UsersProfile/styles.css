@@ -1,0 +1,22 @@
+.userprofile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__follow{
+    top: 10%;
+    right: 5%;
+    padding: 7px 20px;
+    background: #2F80ED;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: Noto Sans;
+    cursor: pointer;
+}
+
+.profile__follow:focus{
+    outline: none;
+}

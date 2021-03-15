@@ -1,0 +1,286 @@
+.tweet-container{
+    margin-top: 50px;
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    padding: 16px;
+    width: 40%;
+    background-color: white;
+  
+}
+.user{
+    position: relative;
+}
+.userimg{
+    border-radius: 8px;
+    width: 71.16px;
+    height: 76.74px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.username{
+    position:absolute;
+    /* width: 100px; */
+    height: 48px;
+    left: 90px;
+    top: 4px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    color: #000000;
+}
+
+
+.date{
+    position:absolute;
+    width: 200px;
+    top:60px;
+    left: 20px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+}
+
+.content{
+    font-family: Noto Sans;
+    font-style: large;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+    /* width: 730px; */
+    height: auto;
+    /* top: 614.9px; */
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+
+.postimg{
+    /* position: absolute; */
+    width: 100%;
+    object-fit: contain;
+    /* background-image: url('https://www.history.com/.image/t_share/MTU4MDk5NjA0Mjc1OTk2NDQx/africa.jpg'); */
+    border-radius: 8px;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.myuserimg{
+    background: url('https://www.personality-database.com/profile_images/121360.png?id=107143');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    
+}
+.counters{
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.counters small{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+}
+
+/* .counter1{
+    width: 82px;
+    height: 16px;
+    left: 995px;
+    top: 996.12px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+}
+
+.counter2{
+    width: 72px;
+    height: 16px;
+    left: 1093px;
+    top: 996.12px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+}
+
+.counter3{
+    width: 55px;
+    height: 16px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+} */
+
+.comment{
+    width: 100%;
+    height: 40px;
+    background: #FAFAFA;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.tweet__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+/* display: 'flex', alignItems: 'center' */
+.tweet__icons div{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* .tweet__icons div:hover{
+    background-color:#F2F2F2;
+    /* transition: s; */
+  
+/* } */ */
+.line{
+    /* position: absolute; */
+width: 705px;
+height: 0px;
+/* left: 532px; */
+top: 1020.12px;
+
+/* Gray 6 */
+
+border: 1px solid #F2F2F2;
+}
+.tweet-container button:focus{
+    outline:3px solid transparent;
+}
+
+.comment:focus {
+    outline:3px solid transparent;
+}
+
+.comments{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comments_img{
+    /* margin: 5px; */
+    width: 40px;
+    height: 40px;
+    background: url('https://www.personality-database.com/profile_images/121360.png?id=107143');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    
+}
+
+.comments_details{
+    margin-left: 10px;
+    width: 90%;
+    padding: 5px;
+    background: #FAFAFA;
+    border-radius: 8px;
+}
+
+.comments_details div p{
+    /* margin-top: 2px; */
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.comments_name{
+    margin-top: 2px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    color: #000000;
+}
+
+.comments_date{
+    margin-top: 3px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #BDBDBD;
+}
+
+.comments__content{
+    margin-left: 10px;
+    text-align: start;
+    margin-top: 0px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+
+@media only screen and (max-width: 900px) {
+   
+    .tweet-container{
+        width: 90%;
+    }
+
+
+  }

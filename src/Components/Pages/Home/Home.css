@@ -1,0 +1,148 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home__img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_1141196125_411306.jpg);
+}
+
+
+.tweet{
+    width: 45%;
+    height: 155.29px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tweet__text{
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+
+.tweet__border{
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    /* height: 1px; */
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.tweet__input{
+    position: absolute;
+    top: 65px;
+    left: 100px;
+    border: none;
+    /* padding: 20px; */
+    width: 79%;
+    /* width: 540px; */
+    height: 50px;
+    font-family: Noto Sans;
+    overflow: hidden;
+}
+
+.tweet__pic{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_1141196125_411306.jpg);
+    position: absolute;
+    border-radius: 4px;
+    left: 40px ;
+    top: 60px;
+}
+
+.tweet__input:focus {
+    outline: 3px solid transparent;
+  }
+
+.tweet__buttom{
+    padding: 10px 30px;
+    background: #2F80ED;
+    border:0px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    cursor: pointer;
+
+
+}
+
+.tweet__buttom:focus{
+    outline: 3px solid transparent;
+}
+
+.buttom__text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+.tweets{
+    margin-top: 40px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+   
+    .tweet__input{
+        width: 70%;
+    }
+    
+
+  }
+
+@media only screen and (max-width: 900px) {
+   
+    .tweet{
+        width: 95%;
+    }
+
+    .tweet__input{
+        width: 80%;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 650px) {
+   
+    .tweet__input{
+        width: 66%;
+    }
+    
+
+  }
