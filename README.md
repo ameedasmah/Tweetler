@@ -1,8 +1,12 @@
 # Project Name : Tweeter 
 
 ## Team
-  - Noor Aldeen Ashqar
-  - Mo'men Hanbali
+- [Yasir Tobbileh]
+- [Sara Al-Ayed]
+- [Israa kittaneh] 
+- [Ameed Asmah]
+- [Noor Aldeen Ashqar]
+- [Mo'men Hanbali]
 
 ## Table of Contents
 
